@@ -9,19 +9,11 @@ import android.util.Log;
 
 import java.io.File;
 
-/**
- * TensorFlowTraining
- *
- * @author baishixian
- * @date 2018/3/13 10:55
- */
+
 
 public class FileUtil {
 
-    /**
-     * 删除或增加图片、视频等媒体资源文件时 通知系统更新媒体库，重新扫描
-     * @param filePath 文件路径，包括后缀
-     */
+
     public static void notifyScanMediaFile(Context context, String filePath) {
         if (context == null || TextUtils.isEmpty(filePath)){
             Log.e("FileUtil", "notifyScanMediaFile context is null or filePath is empty.");
